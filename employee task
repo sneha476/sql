@@ -1,0 +1,23 @@
+create database sneha;
+
+use sneha;
+
+create table employee(emp_name char(20), location char(25));
+
+desc employee;
+
+alter table employee add ads_emp varchar(25);
+
+alter table employee add emp_id bigint first;
+
+alter table employee add email varchar(25) after emp_name;
+
+alter table employee modify emp_name varchar(25);
+
+alter table employee add sid bigint, add dept varchar(20);
+
+alter table employee rename column emp_name to employeename;
+
+alter table employee drop sid;
+
+desc employee;
